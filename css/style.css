@@ -17,6 +17,47 @@ canvas {
   z-index: -1;
 }
 
+.profile-card {
+  width: 90%;
+  border: 5px solid #a8dadc;
+  border-radius: 15px;
+  background-color: #457b9d;
+  display: flex;
+  flex-direction: column;
+}
+.profile-card__status {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-card__desc {
+  padding: 1rem 2rem;
+}
+.profile-card__desc p {
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.profile-card__photo {
+  width: 90px;
+  height: 90px;
+  background-color: #f1faee;
+  border-radius: 50%;
+  margin: 1.5rem 0;
+  object-fit: cover;
+  border: 2px solid #a8dadc;
+}
+.profile-card__name {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.profile-card__job {
+  font-size: 1.4rem;
+  color: #a8dadc;
+}
+
 body {
   background-color: #1d3557;
   color: #f1faee;

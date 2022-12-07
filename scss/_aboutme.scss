@@ -1,0 +1,46 @@
+.profile-card {
+	width: 90%;
+	border: 5px solid $light-blue;
+	border-radius: 15px;
+	background-color: $dark-blue;
+	display: flex;
+	flex-direction: column;
+
+	&__status {
+		padding: 1rem 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__desc {
+		padding: 1rem 2rem;
+
+		p {
+			font-size: 1.6rem;
+			padding-bottom: 1rem;
+			text-align: center;
+		}
+	}
+
+	&__photo {
+		width: 90px;
+		height: 90px;
+		background-color: $white-color;
+		border-radius: 50%;
+		margin: 1.5rem 0;
+		object-fit: cover;
+		border: 2px solid $light-blue;
+	}
+
+	&__name {
+		font-size: 2.2rem;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	&__job {
+		font-size: 1.4rem;
+		color: $light-blue;
+	}
+}
