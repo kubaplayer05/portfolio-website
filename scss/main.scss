@@ -1,0 +1,62 @@
+@import "./config", "./canvas";
+
+body {
+	background-color: $secondary-color;
+	color: $white-color;
+}
+
+.nav {
+	position: fixed;
+	top: 2rem;
+	right: 2rem;
+
+	&__list {
+		list-style: none;
+		display: flex;
+	}
+
+	&__item {
+		font-size: 2rem;
+		margin: 0 1.5rem;
+
+		a {
+			color: $white-color;
+			text-decoration: none;
+			@include transition-ease;
+
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+section {
+	height: 100vh;
+	width: 100%;
+	padding: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&__title {
+		font-size: 4rem;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	&__author {
+		font-size: 1.6rem;
+		font-weight: 300;
+		padding-top: 1rem;
+	}
+}

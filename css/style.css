@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 62.5%;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+body {
+  background-color: #1d3557;
+  color: #f1faee;
+}
+
+.nav {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+}
+.nav__list {
+  list-style: none;
+  display: flex;
+}
+.nav__item {
+  font-size: 2rem;
+  margin: 0 1.5rem;
+}
+.nav__item a {
+  color: #f1faee;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.nav__item a:hover {
+  color: #e63946;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__title {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+}
+.header__author {
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding-top: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

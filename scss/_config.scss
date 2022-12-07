@@ -1,0 +1,21 @@
+$primary-color: #e63946;
+$secondary-color: #1d3557;
+$white-color: #f1faee;
+$light-blue: #a8dadc;
+$dark-blue: #457b9d;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 62.5%;
+}
+
+@mixin transition-ease {
+	transition: all 0.5s ease;
+}
