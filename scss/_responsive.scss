@@ -1,0 +1,75 @@
+@include media-md {
+	.projects {
+		&__container {
+			grid-template-columns: repeat(2, 1fr);
+			transition: transition(1.2s);
+			@include invisible;
+		}
+
+		&__item {
+			width: 350px;
+		}
+	}
+
+	.profile-card {
+		transition: transition(1.2s);
+		@include invisible;
+	}
+
+	.header {
+		&__title {
+			font-size: 4rem;
+		}
+	}
+}
+
+@include media-xl {
+	.profile-card {
+		flex-direction: row;
+		max-width: none;
+		padding: 4rem;
+		width: 1000px;
+
+		&__status {
+			width: 35%;
+			border-right: 1px solid $light-blue;
+		}
+
+		&__name,
+		&__job {
+			text-align: center;
+		}
+
+		&__desc {
+			width: 65%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	.projects {
+		&__container {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	.footer {
+		display: flex;
+		justify-content: space-between;
+
+		&__contact {
+			border-bottom: none;
+
+			p {
+				text-align: left;
+			}
+		}
+
+		&__socials {
+			a {
+				margin: 0 1.5rem;
+			}
+		}
+	}
+}

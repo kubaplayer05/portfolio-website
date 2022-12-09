@@ -19,3 +19,68 @@ html {
 @mixin transition-ease {
 	transition: all 0.5s ease;
 }
+
+@function transition($time) {
+	@return all $time ease;
+}
+
+@mixin box-shadow {
+	box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+
+@mixin media-md {
+	@media screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin media-lg {
+	@media screen and (min-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin media-xl {
+	@media screen and (min-width: 1600px) {
+		@content;
+	}
+}
+
+@mixin invisible {
+	transform: translateY(-100%);
+	opacity: 0;
+}
+
+@mixin glow-static {
+	text-shadow: 3px 3px 20px $primary-color, -2px 1px 30px $primary-color;
+}
+
+@keyframes glow {
+	0%,
+	18%,
+	20%,
+	50.1%,
+	60%,
+	65.1%,
+	80%,
+	90.1%,
+	92% {
+		color: $secondary-color;
+		text-shadow: none;
+	}
+
+	18.1%,
+	20.1%,
+	30%,
+	50%,
+	60.1%,
+	65%,
+	80.1%,
+	90%,
+	92.1%,
+	100% {
+		color: #fff;
+		text-shadow: 0 0 10px $primary-color, 0 0 20px $primary-color,
+			0 0 40px $primary-color 0 0 80px $primary-color, 0 0 160px $primary-color;
+	}
+}

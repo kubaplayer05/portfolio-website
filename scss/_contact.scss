@@ -1,0 +1,37 @@
+.footer {
+	&__contact {
+		font-size: 2rem;
+		font-weight: 500;
+		border-bottom: 1px solid $primary-color;
+
+		p {
+			color: $secondary-color;
+			margin: 1rem 0;
+			text-align: center;
+			letter-spacing: 1px;
+			outline: none;
+			animation: glow 5s linear infinite;
+
+			&:last-child {
+				margin-bottom: 2rem;
+			}
+		}
+	}
+
+	&__socials {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		font-size: 3rem;
+		margin: 2rem 1rem;
+
+		a {
+			text-align: center;
+			color: $secondary-color;
+			@include transition-ease;
+
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+}

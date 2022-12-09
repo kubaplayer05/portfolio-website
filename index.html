@@ -11,18 +11,21 @@
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
 			rel="stylesheet" />
 		<link rel="stylesheet" href="./css/style.css" />
+		<script
+			src="https://kit.fontawesome.com/759bf9f284.js"
+			crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<canvas></canvas>
 
-		<nav class="nav">
+		<!-- <nav class="nav">
 			<ul class="nav__list">
 				<li class="nav__item active"><a href="#">Home</a></li>
-				<li class="nav__item"><a href="#">About me</a></li>
-				<li class="nav__item"><a href="#">Projects</a></li>
-				<li class="nav__item"><a href="#">Contact</a></li>
+				<li class="nav__item"><a href="#about-me">About me</a></li>
+				<li class="nav__item"><a href="#projects">Projects</a></li>
+				<li class="nav__item"><a href="#contact">Contact</a></li>
 			</ul>
-		</nav>
+		</nav> -->
 		<main>
 			<header class="header">
 				<h1 class="header__title">Welcome In My Portfolio Website!</h1>
@@ -40,19 +43,119 @@
 					</div>
 					<div class="profile-card__desc">
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-							ratione dolore explicabo eligendi quasi aut enim? Dolore tempore
-							atque repellendus nemo sequi architecto id consectetur impedit?
-							Minus enim beatae ipsa!
+							Hello I`m 17 years-old high school student which is interesen in
+							website technologies. I also coding in c++ and learning about
+							information technology.
 						</p>
 					</div>
 				</div>
 			</section>
-			<section id="projects"></section>
-			<section id="contact"></section>
+			<section id="projects" class="projects">
+				<div class="projects__container">
+					<div class="projects__item">
+						<h3>Mountain House</h3>
+						<p>
+							Fake company landing page in polish language. I created this using
+							bootstrap 5.
+						</p>
+						<div class="projects__item--btns">
+							<button class="projects__item--btn">
+								<a
+									href="https://github.com/kubaplayer05/mountain-house"
+									target="_blank"
+									><i class="fa-solid fa-play"></i> Demo</a
+								>
+							</button>
+							<button class="projects__item--btn">
+								<a
+									href="https://github.com/kubaplayer05/mountain-house"
+									target="_blank"
+									><i class="fa-brands fa-github"></i> Github</a
+								>
+							</button>
+						</div>
+					</div>
+					<div class="projects__item">
+						<h3>Javascript Calculator</h3>
+						<p>Simple calculator written in vanilla js.</p>
+						<div class="projects__item--btns">
+							<button class="projects__item--btn">
+								<a
+									href="https://github.com/kubaplayer05/mountain-house"
+									target="_blank"
+									><i class="fa-solid fa-play"></i> Demo</a
+								>
+							</button>
+							<button class="projects__item--btn">
+								<a
+									href="https://github.com/kubaplayer05/mountain-house"
+									target="_blank"
+									><i class="fa-brands fa-github"></i> Github</a
+								>
+							</button>
+						</div>
+					</div>
+					<div class="projects__item">
+						<h3>Tip Calculator</h3>
+						<p>
+							Challenge from frontend mentor | <br />
+							Tip calculator with simple validation
+						</p>
+						<div class="projects__item--btns">
+							<button class="projects__item--btn">
+								<a
+									href="https://github.com/kubaplayer05/tip-calculator"
+									target="_blank"
+									><i class="fa-solid fa-play"></i> Demo</a
+								>
+							</button>
+							<button class="projects__item--btn">
+								<a
+									href="https://github.com/kubaplayer05/mountain-house"
+									target="_blank"
+									><i class="fa-brands fa-github"></i> Github</a
+								>
+							</button>
+						</div>
+					</div>
+					<div class="projects__item">
+						<h3>Pong Game</h3>
+						<p>Game builed in canvas html and using javascript OOP.</p>
+						<div class="projects__item--btns">
+							<button class="projects__item--btn">
+								<a
+									href="https://github.com/kubaplayer05/tip-calculator"
+									target="_blank"
+									><i class="fa-solid fa-play"></i> Demo</a
+								>
+							</button>
+							<button class="projects__item--btn">
+								<a
+									href="https://github.com/kubaplayer05/mountain-house"
+									target="_blank"
+									><i class="fa-brands fa-github"></i> Github</a
+								>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
-		<footer class="footer"></footer>
+		<footer class="footer" id="contact">
+			<div class="footer__contact">
+				<p>Tel: +48 516 378 404</p>
+				<p>Mail: jakubgrzybekinf@gmail.com</p>
+			</div>
+
+			<div class="footer__socials">
+				<a href="#"><i class="fa-brands fa-github"></i></a>
+				<a href="#"><i class="fa-brands fa-instagram"></i></a>
+				<a href="#"><i class="fa-brands fa-facebook"></i></a>
+				<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+			</div>
+		</footer>
 
 		<script src="./src/canvas.js"></script>
+		<script src="./src/main.js"></script>
 	</body>
 </html>
