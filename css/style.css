@@ -236,7 +236,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, rgba(17, 17, 17, 0.9), rgba(17, 17, 17, 0.3)), url("../img/bg.webp") center top;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(29, 53, 87, 0.3));
   background-size: cover;
 }
 .header__title {
@@ -253,7 +253,7 @@ section {
 
 footer {
   width: 100%;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
   margin-top: 5rem;
   padding: 2rem 3rem;
   display: grid;
